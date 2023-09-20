@@ -11,19 +11,10 @@ namespace UnitTestingExercise.Tests
         [InlineData(20,76,43,139)]//Add test data <-------
         public void AddTest(int num1, int num2, int num3, int expected)
         {
-            //Start Step 3 here:
-
             //Arrange
-            // create a Calculator object
             var test = new UnitTestMethods();
-          
             //Act
-            // call the Add method that is located in the Calculator class
-            // and store its result in a variable named actual
             var actual = test.add(num1 , num2 ,num3);
-
-            
-
             //Assert
             Assert.Equal(expected, actual);
         }
@@ -33,14 +24,10 @@ namespace UnitTestingExercise.Tests
         [InlineData(100,100,0)]//Add test data <-------
         public void SubtractTest(int minuend, int subtrhend, int expected)
         {
-            //Start Step 5 here:
-
-            //Arrange
+            //arrange
             var subs = new UnitTestMethods();
-
             //Act
-           var actual = subs.SubtractTest(minuend, subtrhend, expected);
-
+            var actual = subs.SubtractTest(minuend, subtrhend, expected);
             //Assert
             Assert.Equal(expected, actual);
 
@@ -52,8 +39,6 @@ namespace UnitTestingExercise.Tests
         [InlineData(32,76,2432)]
         public void MultiplyTest(int num1, int num2, int expected)
         {
-            //Start Step 7 here:
-
             //Arrange
             var multiples = new UnitTestMethods();
             //Act
